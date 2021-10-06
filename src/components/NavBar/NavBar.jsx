@@ -1,6 +1,4 @@
 import React from 'react'
-import CartWidget from '../Cart/CartWidget'
-
 export default function NavBar() {
     return (
         <div>
@@ -8,7 +6,6 @@ export default function NavBar() {
 			    <header>
 			    	<figcaption> <h1><b> LLadosgaming </b></h1>
 			    	</figcaption>
-					<CartWidget/>
 			    	<section class="Menu">
 			    		<ul>
 			    			<li><a href="../Home/Home2.html">Home</a>
