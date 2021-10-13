@@ -24,7 +24,7 @@ const getItem = new Promise((resolve, reject) => {
 });
 getItem.then((resolve) =>console.log(resolve));
     return (
-        <div>
+        <div classname="col col-xs-12 col-sm-12 col-md-4 col-lg-3">
             
         </div>
     )
