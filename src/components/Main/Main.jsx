@@ -7,8 +7,7 @@ const Main = () => {
 
   return (   
         <div style={{ paddingTop:'15px' }}>
-           <ItemListContainer/>
-           <ItemList stock={19} initial={0}/>               
+           <ItemListContainer/>               
         </div>
     )
 }
