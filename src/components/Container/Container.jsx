@@ -3,7 +3,7 @@ import axios from 'axios'
 import Spinner from '../Utilidades/Spinner'
 
 const Container = () => {
-    const[items,setItems]=useState(null)
+    const[Prod,setProd]=useState(null)
     const[carga,setCarga]=useState(false);
     
     const getItems = async() => {
@@ -15,7 +15,7 @@ const Container = () => {
             
             console.log(respuesta )
             setCarga(false)
-            setItems(respuesta)
+            setProd(respuesta)
         }
             catch(error){
                 console.log(error)
