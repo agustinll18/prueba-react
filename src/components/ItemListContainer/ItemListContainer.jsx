@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import ItemList from '../ItemList/ItemList'
+import ItemList from '../ItemList/ItemList';
 
 
 export default function ItemListContainer() {
@@ -15,7 +15,7 @@ export default function ItemListContainer() {
     setClicks(clicks-1)
     }*/
     const [items, setItems] = useState();
-    const item = [
+    var item = [
                     [
                         {
                           modelo: " B550M-DS3H-rev-1x",
@@ -35,14 +35,14 @@ export default function ItemListContainer() {
                     ];
                     
     const getItem = new Promise((resolve, reject) => {
-        setTimeout(() =>resolve(item),2000)
+        setTimeout(() =>resolve(items),2000)
     });
     getItem.then((resolve) =>setItems(resolve));
     
     
     return (
         <div>
-             <ItemList Item={items} stock={19} initial={0}/>
+             <ItemList items={item}/>
         </div>
     )
 }

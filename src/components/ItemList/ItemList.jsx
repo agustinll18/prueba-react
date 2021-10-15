@@ -1,7 +1,6 @@
 import React from 'react'
 import Item from '../Item/Item';
 
-
 export default function ItemList({items}) {
         
     return (
@@ -9,8 +8,11 @@ export default function ItemList({items}) {
             {items.map((item) => (
               <Item
               modelo={item.modelo}
-              precio={item.precio}/>
+              precio={items.precio}
+              marca={item.marca}
+              />
               ))}
+              <Item stock={19} initial={0}/>
         </div>
     )
 }
