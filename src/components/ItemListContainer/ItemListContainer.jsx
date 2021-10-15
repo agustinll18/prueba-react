@@ -15,7 +15,7 @@ export default function ItemListContainer() {
     setClicks(clicks-1)
     }*/
     const [items, setItems] = useState();
-    const Item = [
+    const item = [
                     [
                         {
                           modelo: " B550M-DS3H-rev-1x",
@@ -35,7 +35,7 @@ export default function ItemListContainer() {
                     ];
                     
     const getItem = new Promise((resolve, reject) => {
-        setTimeout(() =>resolve(Item),2000)
+        setTimeout(() =>resolve(item),2000)
     });
     getItem.then((resolve) =>setItems(resolve));
     

@@ -6,7 +6,7 @@ export default function ItemList({items}) {
         
     return (
         <div>
-            {items.map(item => (
+            {items.map((item) => (
               <Item
               modelo={item.modelo}
               precio={item.precio}/>
