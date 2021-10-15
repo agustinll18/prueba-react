@@ -6,7 +6,7 @@ const Main = () => {
 
   return (   
         <div style={{ paddingTop:'15px' }}>
-           <ItemListContainer/>               
+             
         </div>
     )
 }

@@ -1,13 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from '../Cart/CartWidget.jsx';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Main from '../Main/Main.jsx';
+import Footer from '../Footer/Footer';
 export default function NavBar() {
     return (
         <div>
             <header  class="header" >
         	<nav class="navbar navbar-expand-lg navbar-dark">
         		<div class="container-fluid">
-        		  <a class="navbar-brand" href="../index.html">Portfolio</a>
+        		  <Router>
+					  <a class="navbar-brand" href="../index.html">Portfolio</a>
         		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         			<span class="navbar-toggler-icon"></span>
         		  </button>
@@ -17,7 +21,7 @@ export default function NavBar() {
         				<a class="nav-link"href="../index.html">Home</a>
         			  </li>
         			  <li class="nav-item">
-        				<a class="nav-link" href="ambiciones.html">Sobre nosotros</a>
+        				<Link to="/main">Main</Link>
         			  </li>
         			  <li class="nav-item">
         				<a class="nav-link" href="contacto.html">Contacto</a>
@@ -27,6 +31,15 @@ export default function NavBar() {
         			  </li>
         			</ul>
         		  </div>
+				  <Switch>
+                    <Route path="/Main">
+                      <Main/>
+                    </Route>
+                    <Route path="/footer">
+                      <Footer />
+                    </Route>
+                  </Switch>
+                </Router>
         		</div>
         	  </nav>
         </header>

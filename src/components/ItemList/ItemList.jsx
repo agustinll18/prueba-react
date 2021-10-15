@@ -8,7 +8,7 @@ export default function ItemList({items}) {
         <div>
             {items.map(item => (
               <Item
-              mode={item.modelo}
+              modelo={item.modelo}
               precio={item.precio}/>
               ))}
         </div>
