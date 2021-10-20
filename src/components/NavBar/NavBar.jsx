@@ -35,9 +35,6 @@ export default function NavBar() {
                     <Route path="/Main">
                       <Main/>
                     </Route>
-                    <Route path="/footer">
-                      <Footer />
-                    </Route>
                   </Switch>
                 </Router>
         		</div>

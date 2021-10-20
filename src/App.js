@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar/NavBar.jsx'; 
 import Main from './components/Main/Main.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx'
 //import Item from './components/Item/Item.jsx';
 import  Container  from '../src/components/Container/Container';
 
@@ -10,18 +11,14 @@ function App() {
   return (
     <div className="App">
 		<NavBar/>
-		
 		<Main/>
 		<Container/>
+		<ItemDetailContainer/>
         <Footer/>
 	</div>
     
 	);
 }
-/*javascript del curso de JS de coderhouse*/
-
-
-
 export default App;
 /*Mira de nuevo la consigna del desafio. Te estan faltando unos detalles:
 
