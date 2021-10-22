@@ -1,19 +1,20 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios'
+import React, {/*useEffect,*/ useState} from 'react'
+//import axios from 'axios'
 import Spinner from '../Utilidades/Spinner'
+//import Proximos from '../Proximos/Proximos'
 
-const Container = () => {
+export default function Container() {
     const[Prod,setProd]=useState(null)
     const[carga,setCarga]=useState(false);
     
-    const getItems = async() => {
+    /*const getItems = async() => {
         
         setCarga(true)
         
         try{
-            const respuesta = await axios.get('../../Components')
+            const respuesta = await axios.get('../Proximos/Proximos')
             
-            console.log(respuesta )
+            console.log(respuesta)
             setCarga(false)
             setProd(respuesta)
         }
@@ -25,7 +26,7 @@ const Container = () => {
         getItems()
     }
       ,[]
-    )
+    )*/
     return (
         <div className="container d-flex justify-content-center">
             {carga && <Spinner/> }
@@ -33,4 +34,3 @@ const Container = () => {
     )
 }
 
-export default Container
