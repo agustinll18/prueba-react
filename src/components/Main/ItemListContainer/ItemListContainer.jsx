@@ -3,46 +3,37 @@ import ItemList from '../ItemList/ItemList';
 
 
 export default function ItemListContainer() {
-   /* const [ clicks, setClicks] = useState(0)
-    const [contador, setContador] = useState(initial)
-    const addClick = () =>{
-        if(clicks< stock)
-      setClicks(clicks+1)
-    
-    }
-    const removeClick = () =>{
-      if(clicks>0)
-    setClicks(clicks-1)
-    }*/
     const [items, setItems] = useState();
-    var item = [
-                    [
+    var productos = [
                         {
                           modelo: " B550M-DS3H-rev-1x",
                           marca: "Gigabyte",
-                          precio: 10000,
+                          precio: "$10.000",
+                          id: 1
                            },
                         { modelo: " Rx-580",
                           marca: "Asrock",
                           precio: 10000,
+                          id: 2
                         },
                     
                         { modelo: "Ryzen 5 3600xt",
                           marca: "AMD",
                           precio: 20000,
+                          id: 3
                           }
                         ]
-                    ];
+                    ;
                     
     const getItem = new Promise((resolve, reject) => {
         setTimeout(() =>resolve(items),2000)
     });
     getItem.then((resolve) =>setItems(resolve));
     
-    
+
     return (
         <div>
-             <ItemList items={item}/>
+             <ItemList items={productos}/>
         </div>
     )
 }

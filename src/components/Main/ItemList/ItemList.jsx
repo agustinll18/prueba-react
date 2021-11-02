@@ -8,8 +8,9 @@ export default function ItemList({items}) {
             {items.map((item) => (
               <Item
               modelo={item.modelo}
-              precio={items.precio}
+              precio={item.precio}
               marca={item.marca}
+              id={item.id}
               />
               ))}
               <Item stock={19} initial={0}/>

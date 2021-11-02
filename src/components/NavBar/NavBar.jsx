@@ -1,10 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CartWidget from '../Cart/CartWidget.jsx';
+import CartWidget from '../Main/Cart/CartWidget';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Main from '../Main/Main.jsx';
-import Footer from '../Footer/Footer';
-import Barra from '../Barra/Barra';
+
 import Contacto from '../Contacto/Contacto'
 export default function NavBar() {
     return (
@@ -34,9 +33,6 @@ export default function NavBar() {
         			</ul>
         		  </div>
 				  <Switch>
-				  <Route path="/">
-                      <Barra/>
-                    </Route>
                     <Route path="/Main/id:1">
                       <Main/>
                     </Route>

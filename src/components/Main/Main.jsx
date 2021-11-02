@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import ItemListContainer from '../Main/ItemListContainer/ItemListContainer';
 
 const Main = () => {
 
